@@ -7,22 +7,20 @@
     <link rel= "stylesheet" href="weather.css">
       
 <body>
-    <h1> Syötä kaupunki</h1>
-    <input type = "text" id="nappi">
-    <input type="Button" value="OK " id="nappi" onclick="">
-    <p id="teksti"></p>
-    <style>
-        body {
-            background-image: url('Images/sunnyevening.jfif');
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: 100% 100%;
-        }
-    </style>
-<div class="quote-wrapper">
+    <h3> Sää nettisivu</h3>         
+    <div class="dropdown">                  <!-- Dropdown menun koodi-->
+        <button class ="dropbtn">Valitse Kaupunki</button>
+        <div class= "dropdown-content">
+            <a href="#" onclick="vaihdaKaupunki()">Helsinki</a> <!-- Päivittää sivun dataa ottamalla sen function kautta-->
+            <a href="#" onclick="vaihdaKaupunki()">Vaasa</a>
+            <a href="#" onclick="vaihdaKaupunki()">Laihia</a>
+            <a href="#" onclick="vaihdaKaupunki()">Seinäjoki</a>
+        </div>
+    </div>
+<div class="quote-wrapper"> <!-- Nettisivun ympyrä, joka ottaa tiedot css tiedostosta.-->
     <blockquote class="text">
-      <p id="celcius"> Tähän tulee säätiedot</p>
-      <footer id="kaupunki"> Tähän tulee kaupungin nimi </footer>
+      <p id="celcius"> Odotetaan API dataa...</p>
+      <footer id="kaupunki"> Odotetaan API dataa... </footer>
     </blockquote>
   </div>
 
