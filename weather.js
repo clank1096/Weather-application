@@ -27,12 +27,12 @@ function vaihdaKaupunki(KaupunginNimi) {
       .then(response => response.json())
       .then(data => {
         
-        const locationElement = document.getElementById('kaupunki'); //Parse api ja Vie datan html
-        const temperatureElement = document.getElementById('celcius'); //parse api datan ja vie data html
+        const locationElement = document.getElementById('kaupunki'); 
+        const temperatureElement = document.getElementById('celcius'); 
         
         
         locationElement.textContent = KaupunginNimi; 
-        temperatureElement.textContent = data.hourly.temperature_2m[0]+ '°C'; //Hakee lämpötilan ja vie sen html//
+        temperatureElement.textContent = data.hourly.temperature_2m[0]+ '°C'; 
      
       });
   }
